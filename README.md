@@ -61,11 +61,10 @@ services:
   container_name: redis
   ports:
    - "6379:6379"
+   volumes:
+   - ./redis_data:/data
 
 
 #Create .env file (/frontend/.env). add your db url or public-IP <server-ip>
 =================
 VITE_API_URL=http://<server-ip>/api
-
-  volumes:
-   - ./redis_data:/data
