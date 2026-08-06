@@ -68,3 +68,19 @@ services:
 #Create .env file (/frontend/.env). add your db url or public-IP <server-ip>
 =================
 VITE_API_URL=http://<server-ip>/api
+
+
+#Create init.sql file 
+=====================
+CREATE TABLE IF NOT EXISTS students (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(255) NOT NULL,
+ age INT NOT NULL,
+ class VARCHAR(100) NOT NULL,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+#tree
+<img width="598" height="336" alt="image" src="https://github.com/user-attachments/assets/4a1918cc-c51e-44c0-93be-4d0317f7cb22" />
+
